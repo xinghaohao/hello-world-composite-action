@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-      - name: Hello World Haohao.Xing
+        name: Hello World Haohao.Xing
         uses: xinghaohao/hello-world-composite-action@v2
         with:
           who-to-greet: 'Haooooooooooooooooooooooooo'
