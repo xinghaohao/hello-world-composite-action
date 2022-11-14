@@ -1,5 +1,8 @@
-name: 'Hello World'
+name: 'Hello World Haohao.Xing'
 description: 'Greet someone'
+branding:
+  icon: 'award'
+  color: 'green'
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
