@@ -15,7 +15,7 @@ jobs:
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
       - run: |
-          ls -al ./*
+          ls -al 
           pwd
 
 
