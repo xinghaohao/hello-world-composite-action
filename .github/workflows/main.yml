@@ -14,11 +14,16 @@ jobs:
 
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
+      - run: |
+          ls -al
+          pws
 
-      - name: action aaaaaaa test
-        uses: ./.github/actions/action-a/
 
       - name: action bbbbbbb test
         uses: ./.github/actions/action-b/
         with:
           who-to-greet: 'bbbbbbbbbbbbbbbb5bbbbbbbbbbbbbbbbbbbbbbbb'
+
+
+      - name: action aaaaaaa test
+        uses: ./.github/actions/action-a/
