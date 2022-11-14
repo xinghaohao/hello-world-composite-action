@@ -11,12 +11,14 @@ jobs:
         uses: xinghaohao/hello-world-composite-action@v2
         with:
           who-to-greet: 'Haooooooooooooooooooooooooo'
+
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
+
       - name: action aaaaaaa test
         uses: .github/actions/action-a
 
       - name: action bbbbbbb test
         uses: .github/actions/action-b
-        whth:
+        with:
           who-to-greet: 'bbbbbbbbbbbbbbbb5bbbbbbbbbbbbbbbbbbbbbbbb'
