@@ -13,3 +13,10 @@ jobs:
           who-to-greet: 'Haooooooooooooooooooooooooo'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
+      - name: action aaaaaaa test
+        uses: .github/actions/action-a
+
+      - name: action bbbbbbb test
+        uses: .github/actions/action-b
+        whth:
+          who-to-greet: 'bbbbbbbbbbbbbbbb5bbbbbbbbbbbbbbbbbbbbbbbb'
